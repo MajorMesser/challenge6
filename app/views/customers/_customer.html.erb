@@ -1,14 +1,7 @@
-<h2>All Customers</h2>
+<h2><%= customer.full_name %></h2>
 
-<p>New Customer - Missing Emails</p>
+<% image_tag customer.image %>
 
-<% @customers.each do |customer| %>
-    <div id="customer">
-      <p><% link_to 'edit', customer.edit_path %><% link_to 'x', customer.remove_path %></p>
-      <h3><%= customer.full_name %></h3>
-      <%= image_tag customer.image %>
-      <p><strong>Phone: </strong><%= customer.number %></p>
-      <p><strong>Email: </strong><%= customer.email %></p>
-      <p><strong>Notes: </strong><%= customer.notes %></p>
-    </div>
-<% end %>
+<p><strong>Phone: </strong><%= customer.number %></p>
+<p><strong>Email: </strong><%= customer.email %></p>
+<p><strong>Notes:</strong><%= customer.notes %></p>
