@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'finder#index'
-  get '/alphabetized' => 'finder#alphabetic'
+  get '/alphabetic' => 'finder#alphabetic'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
