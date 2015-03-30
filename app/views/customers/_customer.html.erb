@@ -1,0 +1,13 @@
+<h2>All Customers</h2>
+
+<p>New Customer - Missing Emails</p>
+
+<% @customers.each do |customer| %>
+    <div id="customer">
+      <h3><%= customer.full_name %></h3>
+      <%= image_tag customer.image %>
+      <p><strong>Phone: </strong><%= customer.number %></p>
+      <p><strong>Email: </strong><%= customer.email %></p>
+      <p><strong>Notes: </strong><%= customer.notes %></p>
+    </div>
+<% end %>
