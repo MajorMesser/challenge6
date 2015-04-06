@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   root 'finder#index'
   get '/alphabetic' => 'finder#alphabetic'
   get '/missing_email' => 'finder#missing_email'
+  get '/customers/:id/edit' => 'customer#edit'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
